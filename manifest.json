@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+  "name": "AutoSkipIntro",
+  "version": "1.0",
+
+  "description": "Automatically skip intros on Amazon Prime after a set duration",
+
+  "icons": {
+    "48": "assets/icons/autoskipintro-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.primevideo.com/detail/*/*"],
+      "js": ["src/index.js"]
+    }
+  ]
+}
